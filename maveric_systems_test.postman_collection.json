@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "ec839eaa-c98e-4ec1-8ffe-e7244c6f6ebc",
+		"name": "mevric test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45766710",
+		"_collection_link": "https://dharmeshpatel-2456803.postman.co/workspace/Dharmesh-Patel-'s-Workspace~7b306d52-cba1-4ca8-8ee1-f7f21fb120ca/collection/45766710-ec839eaa-c98e-4ec1-8ffe-e7244c6f6ebc?action=share&source=collection_link&creator=45766710"
+	},
+	"item": [
+		{
+			"name": "controll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"grid\": { \"width\": 5, \"height\": 5 },\r\n  \"start\": { \"x\": 1, \"y\": 2, \"direction\": \"N\" },\r\n  \"commands\": \"FFRFFLBB\",\r\n  \"obstacles\": [\r\n    { \"x\": 2, \"y\": 4 },\r\n    { \"x\": 1, \"y\": 1 }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/probe/control",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"probe",
+						"control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "controll no obstical",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"grid\": { \"width\": 6, \"height\": 6 },\r\n  \"start\": { \"x\": 0, \"y\": 0, \"direction\": \"N\" },\r\n  \"commands\": \"FFRFF\",\r\n  \"obstacles\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/probe/control",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"probe",
+						"control"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obstacle Encounter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"grid\": { \"width\": 5, \"height\": 5 },\r\n  \"start\": { \"x\": 1, \"y\": 1, \"direction\": \"E\" },\r\n  \"commands\": \"FFFRFF\",\r\n  \"obstacles\": [\r\n    { \"x\": 3, \"y\": 1 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/probe/control",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"probe",
+						"control"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
