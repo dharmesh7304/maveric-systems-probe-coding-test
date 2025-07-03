@@ -1,5 +1,6 @@
 package com.mavericsystems.coding_test.unittestcases;
 
+import com.mavericsystems.coding_test.constant.Direction;
 import lombok.Getter;
 import lombok.Setter;
 

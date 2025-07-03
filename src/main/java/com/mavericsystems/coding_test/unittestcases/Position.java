@@ -1,5 +1,7 @@
 package com.mavericsystems.coding_test.unittestcases;
 
+import com.mavericsystems.coding_test.constant.Direction;
+
 import java.util.Objects;
 
 public class Position {

@@ -1,6 +1,6 @@
 package com.mavericsystems.coding_test;
 
-import com.mavericsystems.coding_test.unittestcases.Direction;
+import com.mavericsystems.coding_test.constant.Direction;
 import com.mavericsystems.coding_test.unittestcases.Position;
 import com.mavericsystems.coding_test.unittestcases.Probe;
 import org.junit.jupiter.api.Test;

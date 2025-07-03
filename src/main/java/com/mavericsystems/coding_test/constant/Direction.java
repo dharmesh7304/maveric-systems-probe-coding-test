@@ -1,4 +1,4 @@
-package com.mavericsystems.coding_test.unittestcases;
+package com.mavericsystems.coding_test.constant;
 
 import java.util.List;
 
